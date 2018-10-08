@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>cuttle 0.3.9 - com.criteo.cuttle.Scheduler</title>
-          <meta name="description" content="cuttle 0.3.9 - com.criteo.cuttle.Scheduler" />
-          <meta name="keywords" content="cuttle 0.3.9 com.criteo.cuttle.Scheduler" />
+          <title>cuttle 0.4.1 - com.criteo.cuttle.Scheduler</title>
+          <meta name="description" content="cuttle 0.4.1 - com.criteo.cuttle.Scheduler" />
+          <meta name="keywords" content="cuttle 0.4.1 com.criteo.cuttle.Scheduler" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">cuttle<span id="doc-version">0.3.9</span></span>
+        <span id="doc-title">cuttle<span id="doc-version">0.4.1</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -129,9 +129,27 @@
             </a>
       </span>
       
-      <p class="shortcomment cmt">Core cuttle concepts are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Core cuttle concepts are defined here.</p><ul><li>A <a href="CuttleProject.html" class="extype" name="com.criteo.cuttle.CuttleProject">CuttleProject</a> is basically a <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> to execute.</li><li><a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>s are directed acyclic graphs of <a href="Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>s.</li><li><a href="" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is defined for a given <a href="Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> mechanism.</li><li><a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a>s are created by a <a href="" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> for a given <a href="Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> and <a href="SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a>.</li><li><a href="Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a> handles the <a href="index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s execution.</li><li><a href="index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s are plain asynchronous Scala functions and can use <a href="ExecutionPlatform.html" class="extype" name="com.criteo.cuttle.ExecutionPlatform">ExecutionPlatform</a>s to
+      <p class="shortcomment cmt">Core cuttle concepts are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Core cuttle concepts are defined here.</p><ul><li>A <span class="extype" name="CuttleProject">CuttleProject</span> is basically a <span class="extype" name="Workflow">Workflow</span> to execute.</li><li><span class="extype" name="Workflow">Workflow</span>s are directed acyclic graphs of <a href="Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>s.</li><li><a href="" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is defined for a given <a href="Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> mechanism.</li><li><a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a>s are created by a <a href="" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> for a given <a href="Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> and <a href="SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a>.</li><li><a href="Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a> handles the <a href="index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s execution.</li><li><a href="index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s are plain asynchronous Scala functions and can use <a href="ExecutionPlatform.html" class="extype" name="com.criteo.cuttle.ExecutionPlatform">ExecutionPlatform</a>s to
    access underlying resources.
 </li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.criteo">criteo</a></dd></dl></div>
+    </li><li name="com.criteo.cuttle.events" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="events"></a><a id="events:events"></a>
+      <span class="permalink">
+      <a href="../../../com/criteo/cuttle/index.html#events" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="events/index.html">
+              <span class="name">events</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="com.criteo.cuttle">cuttle</a></dd></dl></div>
     </li><li name="com.criteo.cuttle.platforms" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="platforms"></a><a id="platforms:platforms"></a>
       <span class="permalink">
@@ -169,8 +187,8 @@ time partitions defined in a calendar." href="timeseries/index.html">
             </a>
       </span>
       
-      <p class="shortcomment cmt">A <a href="timeseries/TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
-time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="timeseries/TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
+      <p class="shortcomment cmt">A <a href="timeseries/TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
+time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="timeseries/TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
 time partitions defined in a calendar. Each <a href="Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> defines how it mnaps
 to the calendar (for example Hourly or Daily UTC), and the <a href="" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>
 ensure that at least one <a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a> is created and successfully run
@@ -216,12 +234,6 @@ open for any read only operation.">
                           Completed
                         </a>
                       </li><li class="current-entities indented3">
-                        <a class="object" href="CuttleProject$.html" title="Create new projects."></a>
-                        <a class="class" href="CuttleProject.html" title="A cuttle project is a workflow to execute with the appropriate scheduler."></a>
-                        <a href="CuttleProject.html" title="A cuttle project is a workflow to execute with the appropriate scheduler.">
-                          CuttleProject
-                        </a>
-                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="DBLocation.html" title="Configuration of JDBC endpoint."></a>
                         <a href="DBLocation.html" title="Configuration of JDBC endpoint.">
@@ -247,12 +259,6 @@ open for any read only operation.">
                         </a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="object" href="ExecutionContexts$.html" title=""></a>
-                        <a href="ExecutionContexts$.html" title="">
-                          ExecutionContexts
-                        </a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
                         <a class="trait" href="ExecutionPlatform.html" title="An ExecutionPlatform provides controlled access to shared resources."></a>
                         <a href="ExecutionPlatform.html" title="An ExecutionPlatform provides controlled access to shared resources.">
                           ExecutionPlatform
@@ -272,7 +278,7 @@ given Executions.">
                           Executor
                         </a>
                       </li><li class="current-entities indented3">
-                        <a class="object" href="Job$.html" title=""></a>
+                        <a class="object" href="Job$.html" title="Companion object for Job."></a>
                         <a class="class" href="Job.html" title="The job SideEffect is the most important part as it represents the real
 job logic to execute."></a>
                         <a href="Job.html" title="The job SideEffect is the most important part as it represents the real
@@ -290,6 +296,12 @@ job logic to execute.">
                         <a class="object" href="Metrics$.html" title="Expose cuttle metrics via the prometheus protocol."></a>
                         <a href="Metrics$.html" title="Expose cuttle metrics via the prometheus protocol.">
                           Metrics
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Queries$.html" title=""></a>
+                        <a href="Queries$.html" title="">
+                          Queries
                         </a>
                       </li><li class="current-entities indented3">
                         <a class="object" href="RetryStrategy$.html" title="Built-in RetryStrategy"></a>
@@ -320,16 +332,22 @@ for a given Scheduling.">
                           SchedulingContext
                         </a>
                       </li><li class="current-entities indented3">
-                        <span class="separator"></span>
+                        <a class="object" href="Tag$.html" title=""></a>
                         <a class="class" href="Tag.html" title="Allow to tag a job."></a>
                         <a href="Tag.html" title="Allow to tag a job.">
                           Tag
                         </a>
                       </li><li class="current-entities indented3">
-                        <a class="object" href="Workflow$.html" title="Utilities for Workflow."></a>
-                        <a class="trait" href="Workflow.html" title="The workflow to be run by cuttle."></a>
-                        <a href="Workflow.html" title="The workflow to be run by cuttle.">
-                          Workflow
+                        <span class="separator"></span>
+                        <a class="object" href="ThreadPools$.html" title=""></a>
+                        <a href="ThreadPools$.html" title="">
+                          ThreadPools
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Workload.html" title="Represent the workload of a Cuttle project, ie."></a>
+                        <a href="Workload.html" title="Represent the workload of a Cuttle project, ie.">
+                          Workload
                         </a>
                       </li>
               </ul>
@@ -359,7 +377,7 @@ for a given Scheduling.">
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A scheduler interpret a <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> and instanciate <a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Executions</a> for all
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A scheduler interpret a <span class="extype" name="Workflow">Workflow</span> and instanciate <a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Executions</a> for all
 defined <a href="Job.html" class="extype" name="com.criteo.cuttle.Job">Jobs</a>. For example, a typical cuttle <a href="" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is the <a href="timeseries/TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a>
 scheduler that executes the graph for each time partition.
 </p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>The king of <a href="Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> managed by this <a href="" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/criteo/cuttle/blob/master/core/src/main/scala/com/criteo/cuttle/Scheduling.scala" target="_blank">Scheduling.scala</a></dd></dl><div class="toggleContainer block">
@@ -421,27 +439,10 @@ scheduler that executes the graph for each time partition.
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="com.criteo.cuttle.Scheduler#allContexts" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="allContexts:doobie.imports.Fragment"></a>
+              <ol><li name="com.criteo.cuttle.Scheduler#start" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="start(jobs:com.criteo.cuttle.Workload[S],executor:com.criteo.cuttle.Executor[S],xa:com.criteo.cuttle.XA,logger:com.criteo.cuttle.Logger):Unit"></a><a id="start(Workload[S],Executor[S],XA,Logger):Unit"></a>
       <span class="permalink">
-      <a href="../../../com/criteo/cuttle/Scheduler.html#allContexts:doobie.imports.Fragment" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">allContexts</span><span class="result">: <span class="extype" name="doobie.Types.Fragment">doobie.imports.Fragment</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Provide a doobie SQL <code>Fragment</code> used to retrieve all execution contexts from
-the execution logs.</p>
-    </li><li name="com.criteo.cuttle.Metrics.MetricProvider#getMetrics" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="getMetrics(jobs:Set[String],workflow:com.criteo.cuttle.Workflow[S]):Seq[com.criteo.cuttle.Metrics.Metric]"></a><a id="getMetrics(Set[String],Workflow[S]):Seq[Metric]"></a>
-      <span class="permalink">
-      <a href="../../../com/criteo/cuttle/Scheduler.html#getMetrics(jobs:Set[String],workflow:com.criteo.cuttle.Workflow[S]):Seq[com.criteo.cuttle.Metrics.Metric]" title="Permalink">
+      <a href="../../../com/criteo/cuttle/Scheduler.html#start(jobs:com.criteo.cuttle.Workload[S],executor:com.criteo.cuttle.Executor[S],xa:com.criteo.cuttle.XA,logger:com.criteo.cuttle.Logger):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -450,46 +451,12 @@ the execution logs.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getMetrics</span><span class="params">(<span name="jobs">jobs: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="workflow">workflow: <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>[<span class="extype" name="com.criteo.cuttle.Scheduler.S">S</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="Metrics$$Metric.html" class="extype" name="com.criteo.cuttle.Metrics.Metric">Metric</a>]</span>
+        <span class="name">start</span><span class="params">(<span name="jobs">jobs: <a href="Workload.html" class="extype" name="com.criteo.cuttle.Workload">Workload</a>[<span class="extype" name="com.criteo.cuttle.Scheduler.S">S</span>]</span>, <span name="executor">executor: <a href="Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a>[<span class="extype" name="com.criteo.cuttle.Scheduler.S">S</span>]</span>, <span name="xa">xa: <a href="index.html#XA=doobie.imports.Transactor[cats.effect.IO]" class="extmbr" name="com.criteo.cuttle.XA">XA</a></span>, <span name="logger">logger: <a href="Logger.html" class="extype" name="com.criteo.cuttle.Logger">Logger</a></span>)</span><span class="result">: <a href="https://www.scala-lang.org/api/current/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Metrics$$MetricProvider.html" class="extype" name="com.criteo.cuttle.Metrics.MetricProvider">MetricProvider</a></dd></dl></div>
-    </li><li name="com.criteo.cuttle.Scheduler#getStats" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="getStats(jobs:Set[String]):io.circe.Json"></a><a id="getStats(Set[String]):Json"></a>
-      <span class="permalink">
-      <a href="../../../com/criteo/cuttle/Scheduler.html#getStats(jobs:Set[String]):io.circe.Json" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getStats</span><span class="params">(<span name="jobs">jobs: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="http://circe.github.io/circe/api/io/circe/Json.html#io.circe.Json" class="extype" name="io.circe.Json">Json</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Returns a Json object containing the internal scheduler statistics informations.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a Json object containing the internal scheduler statistics informations.
-These data will be send to the UI and can be used by the scheduler UI if needed.
-</p></div><dl class="paramcmts block"><dt class="param">jobs</dt><dd class="cmt"><p>Fiter the statistics for the provided list of jobs.</p></dd></dl></div>
-    </li><li name="com.criteo.cuttle.Scheduler#start" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="start(workflow:com.criteo.cuttle.Workflow[S],executor:com.criteo.cuttle.Executor[S],xa:com.criteo.cuttle.XA,logger:com.criteo.cuttle.Logger):Unit"></a><a id="start(Workflow[S],Executor[S],XA,Logger):Unit"></a>
-      <span class="permalink">
-      <a href="../../../com/criteo/cuttle/Scheduler.html#start(workflow:com.criteo.cuttle.Workflow[S],executor:com.criteo.cuttle.Executor[S],xa:com.criteo.cuttle.XA,logger:com.criteo.cuttle.Logger):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">start</span><span class="params">(<span name="workflow">workflow: <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>[<span class="extype" name="com.criteo.cuttle.Scheduler.S">S</span>]</span>, <span name="executor">executor: <a href="Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a>[<span class="extype" name="com.criteo.cuttle.Scheduler.S">S</span>]</span>, <span name="xa">xa: <a href="index.html#XA=doobie.imports.Transactor[cats.effect.IO]" class="extmbr" name="com.criteo.cuttle.XA">XA</a></span>, <span name="logger">logger: <a href="Logger.html" class="extype" name="com.criteo.cuttle.Logger">Logger</a></span>)</span><span class="result">: <a href="https://www.scala-lang.org/api/current/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Starts the scheduler for the given <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Starts the scheduler for the given <a href="Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>. Immediatly the scheduler will start interpreting
+      <p class="shortcomment cmt">Starts the scheduler for the given <span class="extype" name="Workflow">Workflow</span>.</p><div class="fullcomment"><div class="comment cmt"><p>Starts the scheduler for the given <span class="extype" name="Workflow">Workflow</span>. Immediatly the scheduler will start interpreting
 the workflow and generate <a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Executions</a> sent to the provided <a href="Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a>.
-</p></div><dl class="paramcmts block"><dt class="param">workflow</dt><dd class="cmt"><p>The workflow to run.</p></dd><dt class="param">executor</dt><dd class="cmt"><p>The executor to use to run the generated <a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Executions</a>.</p></dd><dt class="param">xa</dt><dd class="cmt"><p>The doobie transactor to use to persist the scheduler state if needed.</p></dd><dt class="param">logger</dt><dd class="cmt"><p>The logger to use to log internal debug state if neeed.</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">jobs</dt><dd class="cmt"><p>The jobs to run.</p></dd><dt class="param">executor</dt><dd class="cmt"><p>The executor to use to run the generated <a href="Execution.html" class="extype" name="com.criteo.cuttle.Execution">Executions</a>.</p></dd><dt class="param">xa</dt><dd class="cmt"><p>The doobie transactor to use to persist the scheduler state if needed.</p></dd><dt class="param">logger</dt><dd class="cmt"><p>The logger to use to log internal debug state if neeed.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -544,6 +511,26 @@ the workflow and generate <a href="Execution.html" class="extype" name="com.crit
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.criteo.cuttle.Scheduler#allContexts" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allContexts:doobie.imports.Fragment"></a>
+      <span class="permalink">
+      <a href="../../../com/criteo/cuttle/Scheduler.html#allContexts:doobie.imports.Fragment" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">allContexts</span><span class="result">: <span class="extype" name="doobie.Types.Fragment">doobie.imports.Fragment</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provide a doobie SQL <code>Fragment</code> used to retrieve all execution contexts from
+the execution logs.</p><div class="fullcomment"><div class="comment cmt"><p>Provide a doobie SQL <code>Fragment</code> used to retrieve all execution contexts from
+the execution logs.</p><p>This fragment must be a SELECT query returning (id,json) tuples for all known
+scheduling contexts.
+</p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -652,6 +639,40 @@ the workflow and generate <a href="Execution.html" class="extype" name="com.crit
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.criteo.cuttle.Metrics.MetricProvider#getMetrics" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMetrics(jobIds:Set[String],jobs:com.criteo.cuttle.Workload[S]):Seq[com.criteo.cuttle.Metrics.Metric]"></a><a id="getMetrics(Set[String],Workload[S]):Seq[Metric]"></a>
+      <span class="permalink">
+      <a href="../../../com/criteo/cuttle/Scheduler.html#getMetrics(jobIds:Set[String],jobs:com.criteo.cuttle.Workload[S]):Seq[com.criteo.cuttle.Metrics.Metric]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMetrics</span><span class="params">(<span name="jobIds">jobIds: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="jobs">jobs: <a href="Workload.html" class="extype" name="com.criteo.cuttle.Workload">Workload</a>[<span class="extype" name="com.criteo.cuttle.Scheduler.S">S</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="Metrics$$Metric.html" class="extype" name="com.criteo.cuttle.Metrics.Metric">Metric</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Metrics$$MetricProvider.html" class="extype" name="com.criteo.cuttle.Metrics.MetricProvider">MetricProvider</a></dd></dl></div>
+    </li><li name="com.criteo.cuttle.Scheduler#getStats" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getStats(jobs:Set[String]):io.circe.Json"></a><a id="getStats(Set[String]):Json"></a>
+      <span class="permalink">
+      <a href="../../../com/criteo/cuttle/Scheduler.html#getStats(jobs:Set[String]):io.circe.Json" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getStats</span><span class="params">(<span name="jobs">jobs: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="http://circe.github.io/circe/api/io/circe/Json.html#io.circe.Json" class="extype" name="io.circe.Json">Json</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a Json object containing the internal scheduler statistics informations.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a Json object containing the internal scheduler statistics informations.
+These data will be send to the UI and can be used by the scheduler UI if needed.
+</p></div><dl class="paramcmts block"><dt class="param">jobs</dt><dd class="cmt"><p>Filter the statistics for the provided list of jobs.</p></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
@@ -684,6 +705,22 @@ the workflow and generate <a href="Execution.html" class="extype" name="com.crit
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.criteo.cuttle.Scheduler#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="name:String"></a>
+      <span class="permalink">
+      <a href="../../../com/criteo/cuttle/Scheduler.html#name:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">

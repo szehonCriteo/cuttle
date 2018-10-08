@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>cuttle 0.3.9 - com.criteo.cuttle.timeseries</title>
-          <meta name="description" content="cuttle 0.3.9 - com.criteo.cuttle.timeseries" />
-          <meta name="keywords" content="cuttle 0.3.9 com.criteo.cuttle.timeseries" />
+          <title>cuttle 0.4.1 - com.criteo.cuttle.timeseries</title>
+          <meta name="description" content="cuttle 0.4.1 - com.criteo.cuttle.timeseries" />
+          <meta name="keywords" content="cuttle 0.4.1 com.criteo.cuttle.timeseries" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">cuttle<span id="doc-version">0.3.9</span></span>
+        <span id="doc-title">cuttle<span id="doc-version">0.4.1</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -129,9 +129,27 @@
             </a>
       </span>
       
-      <p class="shortcomment cmt">Core cuttle concepts are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Core cuttle concepts are defined here.</p><ul><li>A <a href="../CuttleProject.html" class="extype" name="com.criteo.cuttle.CuttleProject">CuttleProject</a> is basically a <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> to execute.</li><li><a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>s are directed acyclic graphs of <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>s.</li><li><a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is defined for a given <a href="../Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> mechanism.</li><li><a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a>s are created by a <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> for a given <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> and <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a>.</li><li><a href="../Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a> handles the <a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s execution.</li><li><a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s are plain asynchronous Scala functions and can use <a href="../ExecutionPlatform.html" class="extype" name="com.criteo.cuttle.ExecutionPlatform">ExecutionPlatform</a>s to
+      <p class="shortcomment cmt">Core cuttle concepts are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Core cuttle concepts are defined here.</p><ul><li>A <span class="extype" name="CuttleProject">CuttleProject</span> is basically a <span class="extype" name="Workflow">Workflow</span> to execute.</li><li><span class="extype" name="Workflow">Workflow</span>s are directed acyclic graphs of <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>s.</li><li><a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is defined for a given <a href="../Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> mechanism.</li><li><a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a>s are created by a <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> for a given <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> and <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a>.</li><li><a href="../Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a> handles the <a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s execution.</li><li><a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s are plain asynchronous Scala functions and can use <a href="../ExecutionPlatform.html" class="extype" name="com.criteo.cuttle.ExecutionPlatform">ExecutionPlatform</a>s to
    access underlying resources.
 </li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="com.criteo">criteo</a></dd></dl></div>
+    </li><li name="com.criteo.cuttle.events" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="events"></a><a id="events:events"></a>
+      <span class="permalink">
+      <a href="../../../com/criteo/cuttle/index.html#events" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../events/index.html">
+              <span class="name">events</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.criteo.cuttle">cuttle</a></dd></dl></div>
     </li><li name="com.criteo.cuttle.platforms" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="platforms"></a><a id="platforms:platforms"></a>
       <span class="permalink">
@@ -166,8 +184,8 @@
         <span class="name">timeseries</span>
       </span>
       
-      <p class="shortcomment cmt">A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
-time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
+      <p class="shortcomment cmt">A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
+time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
 time partitions defined in a calendar. Each <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> defines how it mnaps
 to the calendar (for example Hourly or Daily UTC), and the <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>
 ensure that at least one <a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a> is created and successfully run
@@ -197,6 +215,12 @@ or not and an audit log of backfills is kept.
                         <a class="class" href="Backfill.html" title="A Backfill allows to recompute already computed time partitions in the past."></a>
                         <a href="Backfill.html" title="A Backfill allows to recompute already computed time partitions in the past.">
                           Backfill
+                        </a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="CuttleProject$.html" title="Create new projects using a timeseries scheduler."></a>
+                        <a class="class" href="CuttleProject.html" title="A cuttle project is a workflow to execute with the appropriate scheduler."></a>
+                        <a href="CuttleProject.html" title="A cuttle project is a workflow to execute with the appropriate scheduler.">
+                          CuttleProject
                         </a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
@@ -248,6 +272,14 @@ time partitions defined in a calendar.">
                         <a href="TimeSeriesUtils$.html" title="">
                           TimeSeriesUtils
                         </a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Workflow$.html" title="Utilities for Workflow."></a>
+                        <a class="trait" href="Workflow.html" title="A timeseries workflow
+"></a>
+                        <a href="Workflow.html" title="A timeseries workflow
+">
+                          Workflow
+                        </a>
                       </li><li name="com.criteo.cuttle.utils" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="utils"></a><a id="utils:utils"></a>
       <span class="permalink">
@@ -294,7 +326,7 @@ time partitions defined in a calendar.">
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
 time partitions defined in a calendar. Each <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> defines how it mnaps
 to the calendar (for example Hourly or Daily UTC), and the <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>
 ensure that at least one <a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a> is created and successfully run
@@ -373,6 +405,26 @@ or not and an audit log of backfills is kept.
 </p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Unique id for the backfill.</p></dd><dt class="param">start</dt><dd class="cmt"><p>Start instant for the partitions to backfill.</p></dd><dt class="param">end</dt><dd class="cmt"><p>End instant for the partitions to backfill.</p></dd><dt class="param">jobs</dt><dd class="cmt"><p>Indicates the part of the graph to backfill.</p></dd><dt class="param">priority</dt><dd class="cmt"><p>The backfill priority. If minus than 0 it is less priority than the day
                 to day workload. If more than 0 it becomes more prioritary and can delay
                 the day to day workload.</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description (for audit logs).</p></dd><dt class="param">status</dt><dd class="cmt"><p>Status of the backfill.</p></dd><dt class="param">createdBy</dt><dd class="cmt"><p>User who created the backfill (for audit logs).</p></dd></dl></div>
+    </li><li name="com.criteo.cuttle.timeseries.CuttleProject" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CuttleProjectextendsAnyRef"></a><a id="CuttleProject:CuttleProject"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/index.html#CuttleProjectextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="A cuttle project is a workflow to execute with the appropriate scheduler." href="CuttleProject.html">
+              <span class="name">CuttleProject</span>
+            </a><span class="result"> extends <a href="https://www.scala-lang.org/api/current/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A cuttle project is a workflow to execute with the appropriate scheduler.</p><div class="fullcomment"><div class="comment cmt"><p>A cuttle project is a workflow to execute with the appropriate scheduler.
+See the <a href="CuttleProject.html" class="extype" name="com.criteo.cuttle.timeseries.CuttleProject">CuttleProject</a> companion object to create projects.
+</p></div></div>
     </li><li name="com.criteo.cuttle.timeseries.SafeLiteralDate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="SafeLiteralDateextendsAnyVal"></a><a id="SafeLiteralDate:SafeLiteralDate"></a>
       <span class="permalink">
@@ -449,7 +501,7 @@ See the companion object for the available calendars.</p></div></div>
         <a title="A TimeSeriesContext is passed to Executions initiated by
 the TimeSeriesScheduler." href="TimeSeriesContext.html">
               <span class="name">TimeSeriesContext</span>
-            </a><span class="params">(<span name="start">start: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="end">end: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="backfill">backfill: <a href="https://www.scala-lang.org/api/current/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a> with <a href="https://www.scala-lang.org/api/current/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+            </a><span class="params">(<span name="start">start: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="end">end: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="backfill">backfill: <a href="https://www.scala-lang.org/api/current/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a>] = <span class="symbol">None</span></span>, <span name="projectVersion">projectVersion: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="result"> extends <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a> with <a href="https://www.scala-lang.org/api/current/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">A <a href="TimeSeriesContext.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesContext">TimeSeriesContext</a> is passed to <a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Executions</a> initiated by
@@ -475,15 +527,15 @@ TimeSeries Workflow." href="TimeSeriesDependency.html">
       </span>
       
       <p class="shortcomment cmt">A <a href="TimeSeriesDependency.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesDependency">TimeSeriesDependency</a> qualify the dependency between 2 <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Jobs</a> in a
-<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeriesDependency.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesDependency">TimeSeriesDependency</a> qualify the dependency between 2 <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Jobs</a> in a
-<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>. It can be configured to <code>offset</code> the dependency.</p><p>Supposing job1 depends on job2 with dependency descriptor (offsetLow, offsetHigh).
+<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span>.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeriesDependency.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesDependency">TimeSeriesDependency</a> qualify the dependency between 2 <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Jobs</a> in a
+<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span>. It can be configured to <code>offset</code> the dependency.</p><p>Supposing job1 depends on job2 with dependency descriptor (offsetLow, offsetHigh).
 Then to execute period (low, high) of job1, we need period
 (low+offsetLow, high+offsetHigh) of job2.
 </p></div><dl class="paramcmts block"><dt class="param">offsetLow</dt><dd class="cmt"><p>the offset for the low end of the duration</p></dd><dt class="param">offsetHigh</dt><dd class="cmt"><p>the offset for the high end of the duration</p></dd></dl></div>
     </li><li name="com.criteo.cuttle.timeseries.TimeSeriesScheduler" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="TimeSeriesSchedulerextendsScheduler[com.criteo.cuttle.timeseries.TimeSeries]withTimeSeriesAppwithProductwithSerializable"></a><a id="TimeSeriesScheduler:TimeSeriesScheduler"></a>
+      <a id="TimeSeriesSchedulerextendsScheduler[com.criteo.cuttle.timeseries.TimeSeries]withProductwithSerializable"></a><a id="TimeSeriesScheduler:TimeSeriesScheduler"></a>
       <span class="permalink">
-      <a href="../../../../com/criteo/cuttle/timeseries/index.html#TimeSeriesSchedulerextendsScheduler[com.criteo.cuttle.timeseries.TimeSeries]withTimeSeriesAppwithProductwithSerializable" title="Permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/index.html#TimeSeriesSchedulerextendsScheduler[com.criteo.cuttle.timeseries.TimeSeries]withProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -495,17 +547,37 @@ Then to execute period (low, high) of job1, we need period
         <a title="A TimeSeriesScheduler executes the Workflow for the
 time partitions defined in a calendar." href="TimeSeriesScheduler.html">
               <span class="name">TimeSeriesScheduler</span>
-            </a><span class="params">(<span name="logger">logger: <a href="../Logger.html" class="extype" name="com.criteo.cuttle.Logger">Logger</a></span>)</span><span class="result"> extends <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>[<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a>] with <span class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesApp">TimeSeriesApp</span> with <a href="https://www.scala-lang.org/api/current/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+            </a><span class="params">(<span name="logger">logger: <a href="../Logger.html" class="extype" name="com.criteo.cuttle.Logger">Logger</a></span>)</span><span class="result"> extends <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>[<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a>] with <a href="https://www.scala-lang.org/api/current/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      <p class="shortcomment cmt">A <a href="TimeSeriesScheduler.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesScheduler">TimeSeriesScheduler</a> executes the <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
-time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeriesScheduler.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesScheduler">TimeSeriesScheduler</a> executes the <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
+      <p class="shortcomment cmt">A <a href="TimeSeriesScheduler.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesScheduler">TimeSeriesScheduler</a> executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
+time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeriesScheduler.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesScheduler">TimeSeriesScheduler</a> executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
 time partitions defined in a calendar. Each <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> defines how it mnaps
 to the calendar (for example Hourly or Daily UTC), and the <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>
 ensure that at least one <a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a> is created and successfully run
 for each defined Job/Period.</p><p>The scheduler also allow to <a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a> already computed partitions. The <a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a> can be recursive
 or not and an audit log of backfills is kept.
 </p></div></div>
+    </li><li name="com.criteo.cuttle.timeseries.Workflow" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WorkflowextendsWorkload[com.criteo.cuttle.timeseries.TimeSeries]"></a><a id="Workflow:Workflow"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/index.html#WorkflowextendsWorkload[com.criteo.cuttle.timeseries.TimeSeries]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A timeseries workflow
+" href="Workflow.html">
+              <span class="name">Workflow</span>
+            </a><span class="result"> extends <a href="../Workload.html" class="extype" name="com.criteo.cuttle.Workload">Workload</a>[<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A timeseries workflow
+</p>
     </li></ol>
             </div>
 
@@ -572,6 +644,22 @@ complete calendar hours starting at 00 minutes, 00 seconds.</p><p>If the start i
 will actually start the next hour immediatly following the start instant.</p><p>The optional end instant allows to specify a finite calendar that will stop on the
 end instant if it is a round hour or at the start of the hour otherwise.
 </p></div><dl class="paramcmts block"><dt class="param">start</dt><dd class="cmt"><p>The instant this calendar will start.</p></dd><dt class="param">end</dt><dd class="cmt"><p>The optional instant this calendar will end.</p></dd></dl></div>
+    </li><li name="com.criteo.cuttle.timeseries#jobAsWorkflow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jobAsWorkflow(job:com.criteo.cuttle.Job[com.criteo.cuttle.timeseries.TimeSeries]):com.criteo.cuttle.timeseries.Workflow"></a><a id="jobAsWorkflow(Job[TimeSeries]):Workflow"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/index.html#jobAsWorkflow(job:com.criteo.cuttle.Job[com.criteo.cuttle.timeseries.TimeSeries]):com.criteo.cuttle.timeseries.Workflow" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jobAsWorkflow</span><span class="params">(<span name="job">job: <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>[<a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a>]</span>)</span><span class="result">: <a href="Workflow.html" class="extype" name="com.criteo.cuttle.timeseries.Workflow">Workflow</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Convert a single job to Workflow of a single job.</p>
     </li><li name="com.criteo.cuttle.timeseries#monthly" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="monthly(tz:java.time.ZoneId,start:java.time.Instant,end:Option[java.time.Instant]):com.criteo.cuttle.timeseries.TimeSeries"></a><a id="monthly(ZoneId,Instant,Option[Instant]):TimeSeries"></a>
       <span class="permalink">
@@ -629,6 +717,24 @@ week start instant.</p><p>The start instant is used to define the first day of t
 will actually start the next week immediately following the start instant.</p><p>The optional end instant allows to specify a finite calendar that will stop on the
 end instant if it is a round week or at the start of the week otherwise.
 </p></div><dl class="paramcmts block"><dt class="param">tz</dt><dd class="cmt"><p>The time zone for which these _weeks_ are defined.</p></dd><dt class="param">start</dt><dd class="cmt"><p>The instant this calendar will start.</p></dd><dt class="param">end</dt><dd class="cmt"><p>The optional instant this calendar will end.</p></dd></dl></div>
+    </li><li name="com.criteo.cuttle.timeseries.CuttleProject" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CuttleProject"></a><a id="CuttleProject:CuttleProject"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/index.html#CuttleProject" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Create new projects using a timeseries scheduler." href="CuttleProject$.html">
+              <span class="name">CuttleProject</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">Create new projects using a timeseries scheduler.</p>
     </li><li name="com.criteo.cuttle.timeseries.TimeSeries" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="TimeSeries"></a><a id="TimeSeries:TimeSeries"></a>
       <span class="permalink">
@@ -683,6 +789,24 @@ end instant if it is a round week or at the start of the week otherwise.
       </span>
       
       
+    </li><li name="com.criteo.cuttle.timeseries.Workflow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Workflow"></a><a id="Workflow:Workflow"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/index.html#Workflow" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Utilities for Workflow." href="Workflow$.html">
+              <span class="name">Workflow</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">Utilities for <a href="Workflow.html" class="extype" name="com.criteo.cuttle.timeseries.Workflow">Workflow</a>.</p>
     </li>
               </ol>
             </div>

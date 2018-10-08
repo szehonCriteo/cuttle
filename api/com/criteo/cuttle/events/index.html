@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>cuttle 0.4.1 - com.criteo.cuttle.utils</title>
-          <meta name="description" content="cuttle 0.4.1 - com.criteo.cuttle.utils" />
-          <meta name="keywords" content="cuttle 0.4.1 com.criteo.cuttle.utils" />
+          <title>cuttle 0.4.1 - com.criteo.cuttle.events</title>
+          <meta name="description" content="cuttle 0.4.1 - com.criteo.cuttle.events" />
+          <meta name="keywords" content="cuttle 0.4.1 com.criteo.cuttle.events" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -132,7 +132,7 @@
       <p class="shortcomment cmt">Core cuttle concepts are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Core cuttle concepts are defined here.</p><ul><li>A <span class="extype" name="CuttleProject">CuttleProject</span> is basically a <span class="extype" name="Workflow">Workflow</span> to execute.</li><li><span class="extype" name="Workflow">Workflow</span>s are directed acyclic graphs of <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>s.</li><li><a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is defined for a given <a href="../Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> mechanism.</li><li><a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a>s are created by a <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> for a given <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> and <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a>.</li><li><a href="../Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a> handles the <a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s execution.</li><li><a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s are plain asynchronous Scala functions and can use <a href="../ExecutionPlatform.html" class="extype" name="com.criteo.cuttle.ExecutionPlatform">ExecutionPlatform</a>s to
    access underlying resources.
 </li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="com.criteo">criteo</a></dd></dl></div>
-    </li><li name="com.criteo.cuttle.events" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.criteo.cuttle.events" visbl="pub" class="indented4 current" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="events"></a><a id="events:events"></a>
       <span class="permalink">
       <a href="../../../com/criteo/cuttle/index.html#events" title="Permalink">
@@ -144,13 +144,23 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="" href="../events/index.html">
-              <span class="name">events</span>
-            </a>
+        <span class="name">events</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.criteo.cuttle">cuttle</a></dd></dl></div>
-    </li><li name="com.criteo.cuttle.platforms" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li class="current-entities indented4">
+                        <a class="object" href="Event$.html" title=""></a>
+                        <a class="trait" href="Event.html" title=""></a>
+                        <a href="Event.html" title="">
+                          Event
+                        </a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="JobSuccessForced$.html" title=""></a>
+                        <a class="class" href="JobSuccessForced.html" title=""></a>
+                        <a href="JobSuccessForced.html" title="">
+                          JobSuccessForced
+                        </a>
+                      </li><li name="com.criteo.cuttle.platforms" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="platforms"></a><a id="platforms:platforms"></a>
       <span class="permalink">
       <a href="../../../com/criteo/cuttle/index.html#platforms" title="Permalink">
@@ -195,7 +205,7 @@ ensure that at least one <a href="../Execution.html" class="extype" name="com.cr
 for each defined Job/Period.</p><p>The scheduler also allow to <a href="../timeseries/Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a> already computed partitions. The <a href="../timeseries/Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a> can be recursive
 or not and an audit log of backfills is kept.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.criteo.cuttle">cuttle</a></dd></dl></div>
-    </li><li name="com.criteo.cuttle.utils" visbl="pub" class="indented4 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.criteo.cuttle.utils" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="utils"></a><a id="utils:utils"></a>
       <span class="permalink">
       <a href="../../../com/criteo/cuttle/index.html#utils" title="Permalink">
@@ -207,19 +217,13 @@ or not and an audit log of backfills is kept.
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <span class="name">utils</span>
+        <a title="A set of basic utilities useful to write workflows." href="../utils/index.html">
+              <span class="name">utils</span>
+            </a>
       </span>
       
       <p class="shortcomment cmt">A set of basic utilities useful to write workflows.</p><div class="fullcomment"><div class="comment cmt"><p>A set of basic utilities useful to write workflows.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.criteo.cuttle">cuttle</a></dd></dl></div>
-    </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="package$$Timeout$.html" title="Creates a  Future that resolve automatically
-after the given duration."></a>
-                        <a href="package$$Timeout$.html" title="Creates a  Future that resolve automatically
-after the given duration.">
-                          Timeout
-                        </a>
-                      </li>
+    </li>
               </ul>
             </div>
           </div>
@@ -228,8 +232,8 @@ after the given duration.">
       <div id="definition">
         <div class="big-circle package">p</div>
         <p id="owner"><a href="../../../index.html" class="extype" name="com">com</a>.<a href="../../index.html" class="extype" name="com.criteo">criteo</a>.<a href="../index.html" class="extype" name="com.criteo.cuttle">cuttle</a></p>
-        <h1>utils<span class="permalink">
-      <a href="../../../../com/criteo/cuttle/utils/index.html" title="Permalink">
+        <h1>events<span class="permalink">
+      <a href="../../../../com/criteo/cuttle/events/index.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -242,17 +246,12 @@ after the given duration.">
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <span class="name">utils</span>
+        <span class="name">events</span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A set of basic utilities useful to write workflows.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/criteo/cuttle/blob/master/core/src/main/scala/com/criteo/cuttle/Utils.scala" target="_blank">Utils.scala</a></dd></dl><div class="toggleContainer block">
-          <span class="toggle">
-            Linear Supertypes
-          </span>
-          <div class="superTypes hiddenContent"><a href="https://www.scala-lang.org/api/current/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="https://www.scala-lang.org/api/current/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
-        </div></div>
+          <div id="comment" class="fullcommenttop"></div>
         
 
       <div id="mbrsel">
@@ -270,22 +269,10 @@ after the given duration.">
             <ol>
               
               <li class="alpha in"><span>Alphabetic</span></li>
-              <li class="inherit out"><span>By Inheritance</span></li>
+              
             </ol>
           </div>
-          <div class="ancestors">
-                  <span class="filtertype">Inherited<br />
-                  </span>
-                  <ol id="linearization">
-                    <li class="in" name="com.criteo.cuttle.utils"><span>utils</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
-                  </ol>
-                </div><div class="ancestors">
-              <span class="filtertype"></span>
-              <ol>
-                <li class="hideall out"><span>Hide All</span></li>
-                <li class="showall in"><span>Show All</span></li>
-              </ol>
-            </div>
+          
           <div id="visbl">
               <span class="filtertype">Visibility</span>
               <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -297,53 +284,56 @@ after the given duration.">
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.criteo.cuttle.events.Event" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EventextendsAnyRef"></a><a id="Event:Event"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/events/index.html#EventextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Event.html">
+              <span class="name">Event</span>
+            </a><span class="result"> extends <a href="https://www.scala-lang.org/api/current/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+      </span>
+      
+      
+    </li><li name="com.criteo.cuttle.events.JobSuccessForced" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JobSuccessForcedextendsEventwithProductwithSerializable"></a><a id="JobSuccessForced:JobSuccessForced"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/events/index.html#JobSuccessForcedextendsEventwithProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="JobSuccessForced.html">
+              <span class="name">JobSuccessForced</span>
+            </a><span class="params">(<span name="created">created: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="createdBy">createdBy: <a href="../Auth$$User.html" class="extype" name="com.criteo.cuttle.Auth.User">User</a></span>, <span name="jobId">jobId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="intervalStart">intervalStart: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="intervalEnd">intervalEnd: <span class="extype" name="java.time.Instant">Instant</span></span>)</span><span class="result"> extends <a href="Event.html" class="extype" name="com.criteo.cuttle.events.Event">Event</a> with <a href="https://www.scala-lang.org/api/current/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
 
         
 
         <div class="values members">
               <h3>Value Members</h3>
               <ol>
-                <li name="com.criteo.cuttle.utils#transactor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="transactor(config:com.criteo.cuttle.DatabaseConfig):com.criteo.cuttle.XA"></a><a id="transactor(DatabaseConfig):XA"></a>
+                <li name="com.criteo.cuttle.events.Event" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Event"></a><a id="Event:Event"></a>
       <span class="permalink">
-      <a href="../../../../com/criteo/cuttle/utils/index.html#transactor(config:com.criteo.cuttle.DatabaseConfig):com.criteo.cuttle.XA" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">transactor</span><span class="params">(<span name="config">config: <a href="../DatabaseConfig.html" class="extype" name="com.criteo.cuttle.DatabaseConfig">DatabaseConfig</a></span>)</span><span class="result">: <a href="../index.html#XA=doobie.imports.Transactor[cats.effect.IO]" class="extmbr" name="com.criteo.cuttle.XA">XA</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Get a doobie transactor
-</p><div class="fullcomment"><div class="comment cmt"><p>Get a doobie transactor
-</p></div><dl class="paramcmts block"><dt class="param">config</dt><dd class="cmt"><p>Database configuration</p></dd></dl></div>
-    </li><li name="com.criteo.cuttle.utils#updateSchema" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="updateSchema(table:String,schemaEvolutions:List[doobie.ConnectionIO[_]]):cats.free.Free[doobie.free.connection.ConnectionOp,Unit]"></a><a id="updateSchema(String,List[doobie.ConnectionIO[_]]):Free[ConnectionOp,Unit]"></a>
-      <span class="permalink">
-      <a href="../../../../com/criteo/cuttle/utils/index.html#updateSchema(table:String,schemaEvolutions:List[doobie.ConnectionIO[_]]):cats.free.Free[doobie.free.connection.ConnectionOp,Unit]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">updateSchema</span><span class="params">(<span name="table">table: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="schemaEvolutions">schemaEvolutions: <span class="extype" name="scala.List">List</span>[<span class="extype" name="doobie.free.Types.ConnectionIO">doobie.ConnectionIO</span>[_]]</span>)</span><span class="result">: <span class="extype" name="cats.free.Free">Free</span>[<span class="extype" name="doobie.free.connection.ConnectionOp">ConnectionOp</span>, <a href="https://www.scala-lang.org/api/current/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Executes unapplied schema evolutions
-</p><div class="fullcomment"><div class="comment cmt"><p>Executes unapplied schema evolutions
-</p></div><dl class="paramcmts block"><dt class="param">table</dt><dd class="cmt"><p>Name of the table that keeps track of applied schema changes</p></dd><dt class="param">schemaEvolutions</dt><dd class="cmt"><p>List of schema evolutions (should be append-only)</p></dd></dl></div>
-    </li><li name="com.criteo.cuttle.utils.Timeout" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Timeout"></a><a id="Timeout:Timeout"></a>
-      <span class="permalink">
-      <a href="../../../../com/criteo/cuttle/utils/index.html#Timeout" title="Permalink">
+      <a href="../../../../com/criteo/cuttle/events/index.html#Event" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -352,14 +342,30 @@ after the given duration.">
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Creates a  Future that resolve automatically
-after the given duration." href="package$$Timeout$.html">
-              <span class="name">Timeout</span>
+        <a title="" href="Event$.html">
+              <span class="name">Event</span>
             </a>
       </span>
       
-      <p class="shortcomment cmt">Creates a  <a href="https://www.scala-lang.org/api/current/scala/concurrent/Future.html" class="extype" name="scala.concurrent.Future">Future</a> that resolve automatically
-after the given duration.</p>
+      
+    </li><li name="com.criteo.cuttle.events.JobSuccessForced" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JobSuccessForced"></a><a id="JobSuccessForced:JobSuccessForced"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/events/index.html#JobSuccessForced" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="JobSuccessForced$.html">
+              <span class="name">JobSuccessForced</span>
+            </a><span class="result"> extends <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      
     </li>
               </ol>
             </div>
@@ -370,11 +376,7 @@ after the given duration.</p>
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="https://www.scala-lang.org/api/current/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
-            </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="https://www.scala-lang.org/api/current/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
-            </div>
+        
         
         </div>
 

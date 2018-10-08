@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>cuttle 0.3.9 - com.criteo.cuttle.timeseries.TimeSeriesContext</title>
-          <meta name="description" content="cuttle 0.3.9 - com.criteo.cuttle.timeseries.TimeSeriesContext" />
-          <meta name="keywords" content="cuttle 0.3.9 com.criteo.cuttle.timeseries.TimeSeriesContext" />
+          <title>cuttle 0.4.1 - com.criteo.cuttle.timeseries.TimeSeriesContext</title>
+          <meta name="description" content="cuttle 0.4.1 - com.criteo.cuttle.timeseries.TimeSeriesContext" />
+          <meta name="keywords" content="cuttle 0.4.1 com.criteo.cuttle.timeseries.TimeSeriesContext" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">cuttle<span id="doc-version">0.3.9</span></span>
+        <span id="doc-title">cuttle<span id="doc-version">0.4.1</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -129,7 +129,7 @@
             </a>
       </span>
       
-      <p class="shortcomment cmt">Core cuttle concepts are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Core cuttle concepts are defined here.</p><ul><li>A <a href="../CuttleProject.html" class="extype" name="com.criteo.cuttle.CuttleProject">CuttleProject</a> is basically a <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> to execute.</li><li><a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a>s are directed acyclic graphs of <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>s.</li><li><a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is defined for a given <a href="../Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> mechanism.</li><li><a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a>s are created by a <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> for a given <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> and <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a>.</li><li><a href="../Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a> handles the <a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s execution.</li><li><a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s are plain asynchronous Scala functions and can use <a href="../ExecutionPlatform.html" class="extype" name="com.criteo.cuttle.ExecutionPlatform">ExecutionPlatform</a>s to
+      <p class="shortcomment cmt">Core cuttle concepts are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Core cuttle concepts are defined here.</p><ul><li>A <span class="extype" name="CuttleProject">CuttleProject</span> is basically a <span class="extype" name="Workflow">Workflow</span> to execute.</li><li><span class="extype" name="Workflow">Workflow</span>s are directed acyclic graphs of <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a>s.</li><li><a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> is defined for a given <a href="../Scheduling.html" class="extype" name="com.criteo.cuttle.Scheduling">Scheduling</a> mechanism.</li><li><a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a>s are created by a <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a> for a given <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> and <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a>.</li><li><a href="../Executor.html" class="extype" name="com.criteo.cuttle.Executor">Executor</a> handles the <a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s execution.</li><li><a href="../index.html#SideEffect[S&lt;:com.criteo.cuttle.Scheduling]=com.criteo.cuttle.Execution[S]=&gt;scala.concurrent.Future[com.criteo.cuttle.Completed]" class="extmbr" name="com.criteo.cuttle.SideEffect">SideEffect</a>s are plain asynchronous Scala functions and can use <a href="../ExecutionPlatform.html" class="extype" name="com.criteo.cuttle.ExecutionPlatform">ExecutionPlatform</a>s to
    access underlying resources.
 </li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="com.criteo">criteo</a></dd></dl></div>
     </li><li name="com.criteo.cuttle.timeseries" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -150,8 +150,8 @@ time partitions defined in a calendar." href="index.html">
             </a>
       </span>
       
-      <p class="shortcomment cmt">A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
-time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <a href="../Workflow.html" class="extype" name="com.criteo.cuttle.Workflow">Workflow</a> for the
+      <p class="shortcomment cmt">A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
+time partitions defined in a calendar.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="TimeSeries.html" class="extype" name="com.criteo.cuttle.timeseries.TimeSeries">TimeSeries</a> scheduler executes the <span class="extype" name="com.criteo.cuttle.Workflow">Workflow</span> for the
 time partitions defined in a calendar. Each <a href="../Job.html" class="extype" name="com.criteo.cuttle.Job">Job</a> defines how it mnaps
 to the calendar (for example Hourly or Daily UTC), and the <a href="../Scheduler.html" class="extype" name="com.criteo.cuttle.Scheduler">Scheduler</a>
 ensure that at least one <a href="../Execution.html" class="extype" name="com.criteo.cuttle.Execution">Execution</a> is created and successfully run
@@ -181,6 +181,12 @@ or not and an audit log of backfills is kept.
                         <a class="class" href="Backfill.html" title="A Backfill allows to recompute already computed time partitions in the past."></a>
                         <a href="Backfill.html" title="A Backfill allows to recompute already computed time partitions in the past.">
                           Backfill
+                        </a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="CuttleProject$.html" title="Create new projects using a timeseries scheduler."></a>
+                        <a class="class" href="CuttleProject.html" title="A cuttle project is a workflow to execute with the appropriate scheduler."></a>
+                        <a href="CuttleProject.html" title="A cuttle project is a workflow to execute with the appropriate scheduler.">
+                          CuttleProject
                         </a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
@@ -232,6 +238,14 @@ time partitions defined in a calendar.">
                         <a href="TimeSeriesUtils$.html" title="">
                           TimeSeriesUtils
                         </a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Workflow$.html" title="Utilities for Workflow."></a>
+                        <a class="trait" href="Workflow.html" title="A timeseries workflow
+"></a>
+                        <a href="Workflow.html" title="A timeseries workflow
+">
+                          Workflow
+                        </a>
                       </li>
               </ul>
             </div>
@@ -255,7 +269,7 @@ time partitions defined in a calendar.">
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">TimeSeriesContext</span><span class="params">(<span name="start">start: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="end">end: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="backfill">backfill: <a href="https://www.scala-lang.org/api/current/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a> with <a href="https://www.scala-lang.org/api/current/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">TimeSeriesContext</span><span class="params">(<span name="start">start: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="end">end: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="backfill">backfill: <a href="https://www.scala-lang.org/api/current/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a>] = <span class="symbol">None</span></span>, <span name="projectVersion">projectVersion: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="result"> extends <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a> with <a href="https://www.scala-lang.org/api/current/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="https://www.scala-lang.org/api/current/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
@@ -313,9 +327,9 @@ the <a href="TimeSeriesScheduler.html" class="extype" name="com.criteo.cuttle.ti
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(start:java.time.Instant,end:java.time.Instant,backfill:Option[com.criteo.cuttle.timeseries.Backfill]):com.criteo.cuttle.timeseries.TimeSeriesContext"></a><a id="&lt;init&gt;:TimeSeriesContext"></a>
+      <a id="&lt;init&gt;(start:java.time.Instant,end:java.time.Instant,backfill:Option[com.criteo.cuttle.timeseries.Backfill],projectVersion:String):com.criteo.cuttle.timeseries.TimeSeriesContext"></a><a id="&lt;init&gt;:TimeSeriesContext"></a>
       <span class="permalink">
-      <a href="../../../../com/criteo/cuttle/timeseries/TimeSeriesContext.html#&lt;init&gt;(start:java.time.Instant,end:java.time.Instant,backfill:Option[com.criteo.cuttle.timeseries.Backfill]):com.criteo.cuttle.timeseries.TimeSeriesContext" title="Permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/TimeSeriesContext.html#&lt;init&gt;(start:java.time.Instant,end:java.time.Instant,backfill:Option[com.criteo.cuttle.timeseries.Backfill],projectVersion:String):com.criteo.cuttle.timeseries.TimeSeriesContext" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -324,7 +338,7 @@ the <a href="TimeSeriesScheduler.html" class="extype" name="com.criteo.cuttle.ti
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">TimeSeriesContext</span><span class="params">(<span name="start">start: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="end">end: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="backfill">backfill: <a href="https://www.scala-lang.org/api/current/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a>] = <span class="symbol">None</span></span>)</span>
+        <span class="name">TimeSeriesContext</span><span class="params">(<span name="start">start: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="end">end: <span class="extype" name="java.time.Instant">Instant</span></span>, <span name="backfill">backfill: <a href="https://www.scala-lang.org/api/current/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a>] = <span class="symbol">None</span></span>, <span name="projectVersion">projectVersion: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span>
       </span>
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">start</dt><dd class="cmt"><p>Start instant of the partition to compute.</p></dd><dt class="param">end</dt><dd class="cmt"><p>End instant of the partition to compute.</p></dd><dt class="param">backfill</dt><dd class="cmt"><p>If this execution is for a backfill, the <a href="Backfill.html" class="extype" name="com.criteo.cuttle.timeseries.Backfill">Backfill</a> informations are provided.</p></dd></dl></div>
@@ -402,6 +416,22 @@ the <a href="TimeSeriesScheduler.html" class="extype" name="com.criteo.cuttle.ti
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#asJson" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJson:io.circe.Json"></a><a id="asJson:Json"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/TimeSeriesContext.html#asJson:io.circe.Json" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJson</span><span class="result">: <a href="http://circe.github.io/circe/api/io/circe/Json.html#io.circe.Json" class="extype" name="io.circe.Json">Json</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Serialize the context information to JSON.</p><div class="fullcomment"><div class="comment cmt"><p>Serialize the context information to JSON.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesContext">TimeSeriesContext</a> → <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a></dd></dl></div>
     </li><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#backfill" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="backfill:Option[com.criteo.cuttle.timeseries.Backfill]"></a><a id="backfill:Option[Backfill]"></a>
       <span class="permalink">
@@ -543,10 +573,10 @@ compared to each other because a workflow/project is defined for a single <a hre
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#log" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="log:doobie.ConnectionIO[String]"></a>
+    </li><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#logIntoDatabase" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logIntoDatabase:doobie.ConnectionIO[String]"></a>
       <span class="permalink">
-      <a href="../../../../com/criteo/cuttle/timeseries/TimeSeriesContext.html#log:doobie.ConnectionIO[String]" title="Permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/TimeSeriesContext.html#logIntoDatabase:doobie.ConnectionIO[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -555,7 +585,7 @@ compared to each other because a workflow/project is defined for a single <a hre
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">log</span><span class="result">: <span class="extype" name="doobie.free.Types.ConnectionIO">doobie.ConnectionIO</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">logIntoDatabase</span><span class="result">: <span class="extype" name="doobie.free.Types.ConnectionIO">doobie.ConnectionIO</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       <p class="shortcomment cmt">The doobie effect needed to serialize the context to the database.</p><div class="fullcomment"><div class="comment cmt"><p>The doobie effect needed to serialize the context to the database.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesContext">TimeSeriesContext</a> → <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a></dd></dl></div>
@@ -607,6 +637,22 @@ compared to each other because a workflow/project is defined for a single <a hre
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#projectVersion" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="projectVersion:String"></a>
+      <span class="permalink">
+      <a href="../../../../com/criteo/cuttle/timeseries/TimeSeriesContext.html#projectVersion:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">projectVersion</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
     </li><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#start" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="start:java.time.Instant"></a><a id="start:Instant"></a>
       <span class="permalink">
@@ -671,22 +717,6 @@ compared to each other because a workflow/project is defined for a single <a hre
       </span>
       
       
-    </li><li name="com.criteo.cuttle.timeseries.TimeSeriesContext#toJson" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toJson:io.circe.Json"></a><a id="toJson:Json"></a>
-      <span class="permalink">
-      <a href="../../../../com/criteo/cuttle/timeseries/TimeSeriesContext.html#toJson:io.circe.Json" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toJson</span><span class="result">: <a href="http://circe.github.io/circe/api/io/circe/Json.html#io.circe.Json" class="extype" name="io.circe.Json">Json</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Serialize the context information to JSON.</p><div class="fullcomment"><div class="comment cmt"><p>Serialize the context information to JSON. Mainly used for the UI.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.criteo.cuttle.timeseries.TimeSeriesContext">TimeSeriesContext</a> → <a href="../SchedulingContext.html" class="extype" name="com.criteo.cuttle.SchedulingContext">SchedulingContext</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
