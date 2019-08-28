@@ -1,13 +1,21 @@
 package com.criteo.cuttle.cron
 
+import java.time.Instant
+import java.util.concurrent.TimeUnit
+
 import scala.concurrent.stm.Txn.ExternalDecider
 import scala.concurrent.stm._
 import cats.effect.IO
+import cats.effect.concurrent.Deferred
 import cats.implicits._
 import doobie.implicits._
 import io.circe.Json
 import com.criteo.cuttle._
-import com.criteo.cuttle.utils.Timeout
+import com.criteo.cuttle.cron.Implicits._
+
+import scala.concurrent.ExecutionContext
+import scala.concurrent.duration.FiniteDuration
+
 
 /** A [[CronScheduler]] executes the set of Jobs at the time instants defined by Cron expressions.
   * Each [[com.criteo.cuttle.Job Job]] has it's own expression and executed separately from others.
@@ -32,6 +40,9 @@ case class CronScheduler(logger: Logger) extends Scheduler[CronScheduling] {
   private val state = CronState(logger)
 
   private def logState = IO(logger.debug(state.toString()))
+
+  //For Cron Sleep
+  implicit val timer = IO.timer(ExecutionContext.fromExecutor(ThreadPools.newScheduledThreadPool(1, poolName = Some("Timeout"))))
 
   /**
     * We associate a commit of new STM state with a DB commit.
@@ -103,9 +114,23 @@ case class CronScheduler(logger: Logger) extends Scheduler[CronScheduling] {
     unsafeRunAsync(programs)
   }
 
+  private[cron] def runJobsNow(jobsToRun: Set[CronJob], executor: Executor[CronScheduling])(implicit transactor: XA,
+                                                                                            user: Auth.User): Unit = {
+    logger.info(s"Request by ${user.userId} to run on demand jobs ${jobsToRun.map(_.id).mkString}")
+    val deferreds = state.getDeferreds(jobsToRun.map(_.id))
+    if (deferreds.size == 0) {
+      logger.info("No job in waiting state.")
+    }
+    for ((job, d) <- deferreds) {
+      logger.info(s"Running ${job.id} on demand.")
+      d.complete(()).unsafeRunSync()
+    }
+  }
+
   private def run(job: CronJob, executor: Executor[CronScheduling]): IO[Completed] = {
-    def runAndRetry(job: Job[CronScheduling], scheduledAt: ScheduledAt, retryNum: Int): IO[Completed] =
+    def runAndRetry(job: Job[CronScheduling], scheduledAt: ScheduledAt, retryNum: Int): IO[Completed] = {
       // don't run anything when job is paused
+      logger.info("Run and retry")
       if (state.isPaused(job)) {
         IO.pure(Completed)
       } else {
@@ -132,6 +157,7 @@ case class CronScheduler(logger: Logger) extends Scheduler[CronScheduling] {
             }
         }
       }
+    }
 
     // don't run anything when job is paused
     if (state.isPaused(job)) {
@@ -150,8 +176,15 @@ case class CronScheduler(logger: Logger) extends Scheduler[CronScheduling] {
             for {
               _ <- IO(state.addNextEventToState(job, scheduledAt.instant))
               _ <- logState
-              _ <- Timeout.applyF(scheduledAt.delay)
-              _ <- runAndRetry(job, scheduledAt, 0)
+              deferred <- Deferred[IO, Unit]
+              _ <- IO(state.addDeferred(job, deferred))
+              scheduledAt <- IO.race(
+                //Sleep and return scheduledAt
+                IO.sleep(scheduledAt.delay).map(_ => scheduledAt),
+                //Woken by user runNow operation, return new time.
+                deferred.get.map(_ => ScheduledAt(Instant.now, FiniteDuration(0, TimeUnit.SECONDS))))
+              _ <- IO(state.removeDeferred(job, deferred))
+              _ <- runAndRetry(job, scheduledAt.merge, 0)
               completed <- run(job, executor)
             } yield completed
         }
